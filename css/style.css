@@ -243,10 +243,28 @@ figure {
   @media screen and (max-width: 768px) {
     #colorlib-main {
       width: 100%;
-      padding: 0 1em; }
+      padding: 0 1em;
+
+}
+.slider-text-inner {
+        /* Adjust these values as needed */
+        top: 70%; /* Position the text lower down */
+        left: 7%; /* Adjust horizontal positioning if necessary */
+        transform: none; /* Remove center transformation */
+    }
+    .btn.btn-primary.btn-learn {
+        display: block;
+        margin: 20px auto; /* Center button horizontally */
+    }
+    .desc h1, .desc h2 {
+        text-align: center; /* Align text to the left */
+    }
+    .desc img {
+        display: none; /* Hide the image in phone mode */
+    }
     .slider-text-inner.js-fullheight img {
         display: none;
-    } 
+    }
     }
 
 #colorlib-hero {
