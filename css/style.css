@@ -217,6 +217,13 @@ figure {
             outline: none;
             color: #2c98f0; }
 
+  @media screen and (max-width: 768px){
+    #colorlib-aside {
+      overflow-y: auto; /* Enable vertical scrollbar */
+      max-height: 100vh; /* Adjust max height as needed */
+  }
+  }
+
   #colorlib-aside .colorlib-footer ul li {
     font-size: 20px;
     text-align: center;
@@ -236,7 +243,10 @@ figure {
   @media screen and (max-width: 768px) {
     #colorlib-main {
       width: 100%;
-      padding: 0 1em; } 
+      padding: 0 1em; }
+    .slider-text-inner.js-fullheight img {
+        display: none;
+    } 
     }
 
 #colorlib-hero {
@@ -256,7 +266,7 @@ figure {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
-        min-height: 400px;
+        min-height: 100px;
         position: relative; }
     #colorlib-hero .flexslider .flex-control-nav {
       bottom: 20px;
@@ -304,7 +314,7 @@ figure {
           color: black;
           font-family: "Playfair Display", Georgia, serif; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           font-size: 60px;
           line-height: 1.3;
           font-weight: 700; }
@@ -406,6 +416,9 @@ body.offcanvas {
       padding-top: 5em;
       padding-bottom: 8em; } }
 
+.colorlib-contact{
+  padding-bottom: 10rem;
+}
 .author-img {
   background-size: cover;
   background-position: center center;
